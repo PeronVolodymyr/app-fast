@@ -7,82 +7,77 @@ import uvicorn
 app = FastAPI()
 
 
-class Words(BaseModel):
+class Students(BaseModel):
     id: int
-    word: str
-    translation: str
-    done: bool = None
+    name: str
+    chair: str
+    group: int
 
 
-class CreateWord(BaseModel):
-    word: str
-    translation: str
+class CreateStudent(BaseModel):
+    name: str
+    chair: str
+    group: int
 
 
-class EditWord(BaseModel):
-    word: str
-    translation: str
-    done: bool
+class EditStudent(BaseModel):
+    name: str
+    chair: str
+    group: int
 
 
-dictionary = [
+students = [
     {
         'id': 1,
-        'word': 'table',
-        'translation': 'стіл',
-        'done': False
+        'name': 'Volodymyr Peron',
+        'chair': 'IFTKN',
+        'group': 443
     },
     {
         'id': 2,
-        'word': 'chair',
-        'translation': 'крісло',
-        'done': False
+        'name': 'Ivan Ivanov',
+        'chair': 'Computer Science',
+        'group': 223
     }
 ]
 
-my_words: List[Words] = dictionary
+my_students: List[Students] = students
+
+@app.get("/students", response_model=List[Students])
+def read_word():
+    return my_students
 
 
-@app.get("/")
-def read_root():
-    return {"Dictionary"}
+@app.get("/student/{student_id}", response_model=Students)
+def save_student(student_id: int):
+    student = list(filter(lambda t: t['id'] == student_id, my_students))
+    return student[0]
 
 
-@app.get("/words", response_model=List[Words])
-def read_task():
-    return my_words
-
-
-@app.get("/word/{word_id}", response_model=Words)
-def save_word(word_id: int):
-    task = list(filter(lambda t: t['id'] == word_id, my_words))
-    return task[0]
-
-
-@app.post("/create/word", response_model=Words, status_code=201)
-def create_word(w: CreateWord):
-    task = {
+@app.post("/create/student", response_model=Students, status_code=201)
+def create_word(w: CreateStudent):
+    student = {
         'id': 44,
-        'word': w.word,
-        'translation': w.translation,
-        'done': False
+        'name': w.name,
+        'chair': w.chair,
+        'group': w.group
     }
-    dictionary.append(task)
-    return task
+    students.append(student)
+    return student
 
 
-@app.put("/words/{word_id}", response_model=Words)
-def edit_words(word_id, w: EditWord):
-    new_word = {
-        'id': word_id,
-        'word': w.word,
-        'translation': w.translation,
-        'done': w.done
+@app.put("/students/{student_id}", response_model=Students)
+def edit_students(student_id, w: EditStudent):
+    new_student = {
+        'id': student_id,
+        'name': w.name,
+        'chair': w.chair,
+        'group': w.group
     }
-    return new_word
+    return new_student
 
 
-@app.delete("/words/{word_id}", response_model=List[Words], status_code=201)
-def delete_words(word_id: int):
-    words = list(filter(lambda t: t['id'] != word_id, my_words))
-    return words
+@app.delete("/students/{student_id}", response_model=List[Students], status_code=201)
+def delete_students(student_id: int):
+    student = list(filter(lambda t: t['id'] != student_id, my_students))
+    return student
