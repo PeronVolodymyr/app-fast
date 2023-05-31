@@ -1,1 +1,1 @@
-test message new
+test message new new
