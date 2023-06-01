@@ -1,1 +1,1 @@
-my new file contents
+new branch 2 content
