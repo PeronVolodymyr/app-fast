@@ -1,1 +1,3086 @@
-{}
+{
+  "data": {
+    "features": [
+      {
+        "technicalName": "aezzhvxcicada",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "all_snapd_elem_consistency_score",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_all_snapd_elem_consistency_score",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_all_snapd_elem_consistency_score",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "applic_industry_segment_cntd_30d",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_applic_industry_segment_cntd_30d",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_applic_industry_segment_cntd_30d",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "applicant_age_ssn_issuance",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_applicant_age_ssn_issuance",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_applicant_age_ssn_issuance",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "asd",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "input_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "valueType": "INT"
+          }
+        ],
+        "defaultValue": "1",
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "day_lr_match_ssn_phone_cnt_2y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_day_lr_match_ssn_phone_cnt_2y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_day_lr_match_ssn_phone_cnt_2y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "day_lr_match_ssn_phone_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_day_lr_match_ssn_phone_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_day_lr_match_ssn_phone_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "day_mr_match_ssn_phone_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_day_mr_match_ssn_phone_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_day_mr_match_ssn_phone_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_all_trades",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_trades",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "atap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "atap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_ins_trades",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_trades",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "inap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "inap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_installment",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_installment",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "inap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "inap01",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "inap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "monthly_income_cap",
+            "inputType": "FEATURE",
+            "originalInput": {
+              "name": "monthly_income_cap",
+              "valueType": "DECIMAL16"
+            },
+            "feature": {
+              "technicalName": "monthly_income_cap",
+              "valueType": "DECIMAL16",
+              "transformer": {
+                "technicalName": "/credit_risk/monthly_income_cap",
+                "valueType": "DECIMAL16",
+                "inputs": [
+                  {
+                    "name": "annual_income",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "default_value",
+                    "valueType": "DECIMAL16"
+                  }
+                ],
+                "status": "QA_TESTING"
+              }
+            },
+            "inputs": [
+              {
+                "name": "borrowerStatedAnnualIncome",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "annual_income"
+                },
+                "dataElement": {
+                  "valueType": "DECIMAL16",
+                  "technicalName": "borrowerStatedAnnualIncome",
+                  "inputs": [
+                    {
+                      "name": "externalApplicationId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "default_value",
+                "inputType": "RUNTIME",
+                "valueType": "DECIMAL16"
+              }
+            ]
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_mir_trades",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_trades_mir",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "inap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "inap01",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "inap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "mt02s",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "mt02s",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "mt02s",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "mtap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "mtap01",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "mtap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "reap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "reap01",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "reap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "rent_by_cbsa2017",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "rent_by_cbsa2017",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "rentByCbsa2017",
+              "inputs": [
+                {
+                  "name": "zipCode",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": "0",
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_rev_ins_helx_trades",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_trades_rev_ins_helx",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "hiap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "hiap01",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "hiap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "hrap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "hrap01",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "hrap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "inap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "inap01",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "inap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "reap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "reap01",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "reap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_rev_ins_trades",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_trades_rev_ins",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "inap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "inap01",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "inap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "reap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "reap01",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "reap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": "0",
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dti_rev_trades",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dti_trades",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "reap01",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "reap01",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "dtia",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/dtia",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "additionalIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "additional_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "additionalIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "dti_mir_trades",
+            "inputType": "FEATURE",
+            "originalInput": {
+              "name": "dti_mir_trades",
+              "valueType": "DECIMAL16"
+            },
+            "feature": {
+              "technicalName": "dti_mir_trades",
+              "valueType": "DECIMAL16",
+              "transformer": {
+                "technicalName": "/credit_risk/dti_trades_mir",
+                "valueType": "DECIMAL16",
+                "inputs": [
+                  {
+                    "name": "borrower_stated_annual_income",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "inap01",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "mt02s",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "mtap01",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "reap01",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "rent_by_cbsa2017",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "default_value",
+                    "valueType": "DECIMAL16"
+                  }
+                ],
+                "status": "QA_TESTING"
+              }
+            },
+            "inputs": [
+              {
+                "name": "borrowerStatedAnnualIncome",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "borrower_stated_annual_income"
+                },
+                "dataElement": {
+                  "valueType": "DECIMAL16",
+                  "technicalName": "borrowerStatedAnnualIncome",
+                  "inputs": [
+                    {
+                      "name": "externalApplicationId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "default_value",
+                "inputType": "RUNTIME",
+                "valueType": "DECIMAL16"
+              },
+              {
+                "name": "inap01",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "inap01"
+                },
+                "dataElement": {
+                  "valueType": "INT",
+                  "technicalName": "inap01",
+                  "inputs": [
+                    {
+                      "name": "externalCreditReportId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "mt02s",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "mt02s"
+                },
+                "dataElement": {
+                  "valueType": "INT",
+                  "technicalName": "mt02s",
+                  "inputs": [
+                    {
+                      "name": "externalCreditReportId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "mtap01",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "mtap01"
+                },
+                "dataElement": {
+                  "valueType": "INT",
+                  "technicalName": "mtap01",
+                  "inputs": [
+                    {
+                      "name": "externalCreditReportId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "reap01",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "reap01"
+                },
+                "dataElement": {
+                  "valueType": "INT",
+                  "technicalName": "reap01",
+                  "inputs": [
+                    {
+                      "name": "externalCreditReportId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "rent_by_cbsa2017",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "rent_by_cbsa2017"
+                },
+                "dataElement": {
+                  "valueType": "DECIMAL16",
+                  "technicalName": "rentByCbsa2017",
+                  "inputs": [
+                    {
+                      "name": "zipCode",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "monthly_income_cap",
+            "inputType": "FEATURE",
+            "originalInput": {
+              "name": "monthly_income_cap",
+              "valueType": "DECIMAL16"
+            },
+            "feature": {
+              "technicalName": "monthly_income_cap",
+              "valueType": "DECIMAL16",
+              "transformer": {
+                "technicalName": "/credit_risk/monthly_income_cap",
+                "valueType": "DECIMAL16",
+                "inputs": [
+                  {
+                    "name": "annual_income",
+                    "valueType": "DECIMAL16"
+                  },
+                  {
+                    "name": "default_value",
+                    "valueType": "DECIMAL16"
+                  }
+                ],
+                "status": "QA_TESTING"
+              }
+            },
+            "inputs": [
+              {
+                "name": "borrowerStatedAnnualIncome",
+                "inputType": "DATA_ELEMENT",
+                "originalInput": {
+                  "name": "annual_income"
+                },
+                "dataElement": {
+                  "valueType": "DECIMAL16",
+                  "technicalName": "borrowerStatedAnnualIncome",
+                  "inputs": [
+                    {
+                      "name": "externalApplicationId",
+                      "valueType": "STRING"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "default_value",
+                "inputType": "RUNTIME",
+                "valueType": "DECIMAL16"
+              }
+            ]
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "email_domain_creation_month_since",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "eml_email_domain_creation_month_since",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "eml_email_domain_creation_month_since",
+              "inputs": [
+                {
+                  "name": "externalApplicantId",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "emailAddress",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "zipCode",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "email_first_verification_date_months_cnt",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "eml_first_verification_date_months_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "eml_first_verification_date_months_cnt",
+              "inputs": [
+                {
+                  "name": "externalApplicantId",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "emailAddress",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "zipCode",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "email_fraud_risk_score",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "eml_email_fraud_risk_score",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "eml_email_fraud_risk_score",
+              "inputs": [
+                {
+                  "name": "externalApplicantId",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "emailAddress",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "zipCode",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "email_query_cnt",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "eml_email_query_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "eml_email_query_cnt",
+              "inputs": [
+                {
+                  "name": "externalApplicantId",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "emailAddress",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "zipCode",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_applic_phone_cnt_3y",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_applic_phone_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_event_applic_phone_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_applic_same_mladdr_cnt_2y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_applic_same_mladdr_cnt_2y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_applic_same_mladdr_cnt_2y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_applic_same_mladdr_cnt_30d",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_applic_same_mladdr_cnt_30d",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_applic_same_mladdr_cnt_30d",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_applic_same_mladdr_cnt_3m",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_applic_same_mladdr_cnt_3m",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_applic_same_mladdr_cnt_3m",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_applic_same_mladdr_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_applic_same_mladdr_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_applic_same_mladdr_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_fullname_same_dob_cnt_15d",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_fullname_same_dob_cnt_15d",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_fullname_same_dob_cnt_15d",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_fullname_same_dob_cnt_3m",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_fullname_same_dob_cnt_3m",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_fullname_same_dob_cnt_3m",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_diff_fullname_cnt_1y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_diff_fullname_cnt_1y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_diff_fullname_cnt_1y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_diff_fullname_cnt_2y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_diff_fullname_cnt_2y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_diff_fullname_cnt_2y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_diff_fullname_cnt_3m",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_diff_fullname_cnt_3m",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_event_mladdr_diff_fullname_cnt_3m",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_diff_fullname_cnt_6m",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_diff_fullname_cnt_6m",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_diff_fullname_cnt_6m",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_diff_lastname_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_diff_lastname_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_diff_lastname_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_1d",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_1d",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_event_mladdr_same_fullname_1d",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_cnt_15d",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_cnt_15d",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_event_mladdr_same_fullname_cnt_15d",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_cnt_1y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_cnt_1y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_same_fullname_cnt_1y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_cnt_2y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_cnt_2y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_same_fullname_cnt_2y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_cnt_30d",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_cnt_30d",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_event_mladdr_same_fullname_cnt_30d",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_cnt_3m",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_cnt_3m",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_same_fullname_cnt_3m",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "event_mladdr_same_fullname_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_event_mladdr_same_fullname_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_event_mladdr_same_fullname_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687767456230",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687767738278",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687772625095",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687772732346",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687774183356",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687774401104",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687774769287",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687774805358",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687775608050",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687775608722",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "feature_technicalname_update1687793050630",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "AutomationTest",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "valueType": "BOOLEAN"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "identity_velocity_pattern_risk_score",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_identity_velocity_pattern_risk_score",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_identity_velocity_pattern_risk_score",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "loan_rating_rank",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/rating_id_to_rating_rank",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_loan_rating_rank",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "prosper_loan_rating_rank",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "mladdr_age_group_cntn",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_mladdr_age_group_cntn",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL7",
+              "technicalName": "ida_mladdr_age_group_cntn",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "mladdr_ipaddr_dist",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_mladdr_ipaddr_dist",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_mladdr_ipaddr_dist",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "mladdr_phone_link_cnt_1y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_mladdr_phone_link_cnt_1y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_mladdr_phone_link_cnt_1y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "mladdr_ssn_link_cnt_1y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_mladdr_ssn_link_cnt_1y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_mladdr_ssn_link_cnt_1y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "mladdr_ssn_link_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_mladdr_ssn_link_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_mladdr_ssn_link_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "monthly_income_cap",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/monthly_income_cap",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          }
+        ],
+        "defaultValue": "0",
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "phone_carrier_isin_voip_landline",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/voip_or_landline",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "eml_phone_carrier_type",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "STRING"
+            },
+            "dataElement": {
+              "valueType": "STRING",
+              "technicalName": "eml_phone_carrier_type",
+              "inputs": [
+                {
+                  "name": "phoneNumber",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "externalApplicantId",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "emailAddress",
+                  "valueType": "STRING"
+                },
+                {
+                  "name": "zipCode",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "phone_mladdr_link_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_phone_mladdr_link_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_phone_mladdr_link_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "phone_payday_apps_ssn_match_cnt_1y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_phone_payday_apps_ssn_match_cnt_1y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_phone_payday_apps_ssn_match_cnt_1y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "phone_ssn_link_cnt_1y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_phone_ssn_link_cnt_1y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_phone_ssn_link_cnt_1y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "phone_ssn_link_cnt_2y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_phone_ssn_link_cnt_2y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "ida_phone_ssn_link_cnt_2y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "phone_ssn_link_cnt_3y",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_phone_ssn_link_cnt_3y",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL7",
+              "technicalName": "ida_phone_ssn_link_cnt_3y",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "pl_origination_cnt",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_pl_origination_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "prosper_pl_origination_cnt",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "policy_risk_weights_score",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/triplenine_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "tmx_policy_risk_weights_score",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "tmx_policy_risk_weights_score",
+              "inputs": [
+                {
+                  "name": "applicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "rat_bc33_income",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/rat_income",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "bc33s",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "bc33s",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "rat_br33_income",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/rat_income",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "br33s",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "br33s",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "rat_fi33_income",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/credit_risk/rat_income",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "borrowerStatedAnnualIncome",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "borrower_stated_annual_income",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "borrowerStatedAnnualIncome",
+              "inputs": [
+                {
+                  "name": "externalApplicationId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          },
+          {
+            "name": "default_value",
+            "inputType": "RUNTIME",
+            "originalInput": {
+              "name": "default_value",
+              "valueType": "DECIMAL16"
+            },
+            "valueType": "DECIMAL16"
+          },
+          {
+            "name": "fi33s",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "fi33s",
+              "inputs": [
+                {
+                  "name": "externalCreditReportId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "ssn_dob_consistency_score",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_ssn_dob_consistency_score",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_ssn_dob_consistency_score",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "ssn_email_link_cnt",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_ssn_email_link_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL7",
+              "technicalName": "ida_ssn_email_link_cnt",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "ssn_other_elem_consistency_score",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_ssn_other_elem_consistency_score",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_ssn_other_elem_consistency_score",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "user_bank_account_cnt",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_user_bank_account_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "prosper_user_bank_account_cnt",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "user_dup_dob_yr_diff_max",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_user_dup_dob_yr_diff_max",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "prosper_user_dup_dob_yr_diff_max",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "user_employment_month_cnt",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_user_employment_month_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "prosper_user_employment_month_cnt",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "user_listing_debt_consolidation_flg",
+        "valueType": "BOOLEAN",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "BOOLEAN",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_user_listing_debt_consolidation_flg",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "BOOLEAN"
+            },
+            "dataElement": {
+              "valueType": "BOOLEAN",
+              "technicalName": "prosper_user_listing_debt_consolidation_flg",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "user_login_failure_cnt",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/generic/same_back",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_user_login_failure_cnt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "prosper_user_login_failure_cnt",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "user_monthly_debt",
+        "valueType": "DECIMAL16",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "DECIMAL16",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "prosper_user_monthly_debt",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "DECIMAL16"
+            },
+            "dataElement": {
+              "valueType": "DECIMAL16",
+              "technicalName": "prosper_user_monthly_debt",
+              "inputs": [
+                {
+                  "name": "listingId",
+                  "valueType": "INT"
+                },
+                {
+                  "name": "userId",
+                  "valueType": "INT"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      },
+      {
+        "technicalName": "zipcode_phone_dist",
+        "valueType": "INT",
+        "transformer": {
+          "technicalName": "/feature_cleaning/negative_to_null",
+          "valueType": "INT",
+          "status": "QA_TESTING"
+        },
+        "inputs": [
+          {
+            "name": "ida_zipcode_phone_dist",
+            "inputType": "DATA_ELEMENT",
+            "originalInput": {
+              "name": "input_value",
+              "valueType": "INT"
+            },
+            "dataElement": {
+              "valueType": "INT",
+              "technicalName": "ida_zipcode_phone_dist",
+              "inputs": [
+                {
+                  "name": "externalIDAnalyticsId",
+                  "valueType": "STRING"
+                }
+              ]
+            }
+          }
+        ],
+        "defaultValue": null,
+        "status": "QA_TESTING"
+      }
+    ]
+  }
+}
